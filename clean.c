@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*convertit char c en un caractere out conforme a l'alphabet simplifie. 
+Renvoie 2 si le caractere c est special, 1 si c'est une majuscule et 0 s'il est déja conforme. */
 int transChar(char c, char* out){
 	if (c < 33 || c == 35 || c == 37 || c == 42 || c == 60 || c == 62 || c == 91 || c == 92|| c == 93 || c == 94|| c == 96 || c > 122)
 	{
@@ -19,6 +21,8 @@ int transChar(char c, char* out){
 	}
 }
 
+/*convertit le string s en un string out conforme a l'alphabet simplifie.
+Renvoie 1 si le texte out est different de s, 0 sinon.*/
 int transString(char* s, char* out){
 	int erreur;
 	int errone = 0;
