@@ -1,11 +1,11 @@
 # rushB
 Turlu du turfu
 
-Boss :
-Ni---S Soleil
-
 Product owner :
 AU----t Qu---IN\n
+
+Scrum master :
+Ni---S Soleil
 
 Techniciens :
 A--Die M---N |
