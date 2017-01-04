@@ -37,6 +37,7 @@ long stringToMorse(char* r) {
 	int i;
 	for (i = 0; i < strlen(r); i++){
 		rep=conca(rep,charToMorse(r[i]));
+		// mettre des espace !!
 	}
 
 	return rep;
