@@ -48,7 +48,7 @@ int transString(char* s, char* out){
 	return errone;
 }
 
-int main()
+/*int main()
 {
 	
 	FILE* entree = fopen("entree.txt", "r+");
@@ -90,7 +90,7 @@ int main()
 
 	return 0;
 
-}
+}*/
 
 
 
