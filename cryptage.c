@@ -1,6 +1,31 @@
 #include "cryptage.h" 
 #include <string.h>
 #include <stdlib.h>
+
+
+
+int main() {
+  printf("\n\n");
+	
+	
+	char* entre = "jesuisunbg";
+	printf("%S",entre);
+	char * crypt = cryptage(entre);
+	printf("%S",crypt);
+	char * decrypt = decryptage(crypt);
+	printf("%S",decrypt);
+
+
+printf("\n\n");
+   return 0;
+}
+
+
+
+
+
+
+
 int find(char r, char* table) {
 
 

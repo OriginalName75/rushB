@@ -178,8 +178,142 @@ long charToMorse(char r) {
 
 		break;	
 
+		case '0' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH);
 
+		break;
 		
+		case '1' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH);			
+
+		break;
+			
+		
+		case '2' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DASH),MORSE_DASH);		
+
+		break;	
+
+		case '3' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DASH);		
+
+		break;	
+
+		case '4' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DASH);	
+
+		break;	
+
+		case '5' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DOT);			
+
+		break;	
+		
+		case '6' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DOT);			
+
+		break;	
+
+		case '7' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DOT);
+
+		break;
+		
+		case '8' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DOT);			
+
+		break;	
+			
+		case '9' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DOT);		
+
+		break;
+		
+		case '.' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DASH);			
+
+		break;
+			
+		
+		case ',' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DASH);		
+
+		break;	
+
+		case '?' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DASH),MOSRE_DOT),MORSE_DOT);			
+
+		break;	
+
+		case '\'' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DOT);		
+
+		break;	
+
+		case '!' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DASH);			
+
+		break;	
+		
+		case '/' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DOT);
+
+		break;
+		
+		case ')' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DASH);			
+
+		break;	
+			
+		case '&' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DOT);		
+
+		break;	
+			
+		case ':' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DOT);			
+
+		break;
+			
+		case ';' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DOT);			
+
+		break;	
+		
+		case '=' :
+			rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DASH);			
+
+		break;	
+			
+		case '+' :
+			rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DOT);			
+
+		break;	
+			
+		case '-' :
+			rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DASH);			
+
+		break;	
+			
+		case '_' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DASH);			
+
+		break;		
+			
+		case '"' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DOT);			
+
+		break;	
+			
+		case '$' :
+			rep=conca(conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DASH);			
+
+		break;		
+			
+		case '@' :
+			rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DOT);			
+
+		break;		
 		default: 
 
 		 rep=MORSE_SPACE;
