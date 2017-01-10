@@ -1,4 +1,5 @@
 # rushB
+
 Cyka blyat, idi nahui!!!
 axaxaxaxaxaxaxaxaxaxa
 
@@ -9,7 +10,7 @@ Scrum master :
 Sun Tithnara
 
 Techniciens :
-Babidi 'Jhen' Moran|
+Babidi 'Jhen' Moran |
 Zhu Lei |
 Welte Anthony
 

@@ -24,6 +24,7 @@ int transChar(char c, char* out){
 /*convertit le string s en un string out conforme a l'alphabet simplifie.
 Renvoie 1 si le texte out est different de s, 0 sinon.*/
 int transString(char* s, char* out){
+	
 	int erreur;
 	int errone = 0;
 	int i;
@@ -44,7 +45,9 @@ int transString(char* s, char* out){
 				errone = 1;
 			};
 	}
+	
 	out[j] = '\0';
+	
 	return errone;
 }
 
