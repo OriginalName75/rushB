@@ -7,6 +7,6 @@
 
 
 
-void readInt(int e);
+void readInt(int e, int led);
 void readMorse(int* morse, int size, int led);
 
