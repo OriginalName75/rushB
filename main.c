@@ -2,13 +2,22 @@
 #include "clean.h"
 #include "cryptage.h"
 #include <stdio.h>
+#include <string.h>
 
 #include <stdlib.h>
 
 int main() {
   printf("\n\n");
 	
+char*  input_string[100];
+	while (strncmp(input_string,"quit",4)) {
+	
+	    scanf("%[^\n]s",&input_string);
+	   
+	    printf("%s",input_string);
+    }
 
+	/*
 	char* entre = "jesuis";
 	
 	char sortie[42];
@@ -29,7 +38,7 @@ int main() {
 	printf("\n\n");
 	   return 0;
 	
-	
+	*/
 printf("\n\n");
    return 0;
 }
