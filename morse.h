@@ -9,7 +9,9 @@ long stringToMorse(char* r);
 int* binaryToMorse(long l, int* size);
 char* binaryToMorseChar(long l, int* size);
 long charToMorse(char r);
+char morseToChar(long m);
 
 long conca(long a, long b);
+
 
 
