@@ -4,7 +4,7 @@
 
 
 
-int main() {
+/*int main() {
   printf("\n\n");
 	
 	
@@ -19,49 +19,7 @@ int main() {
 printf("\n\n");
    return 0;
 }
-
-
-
-
-
-
-
-int find(char r, char* table) {
-
-
-	
-	int i;
-	for (i=0; i<54;i++) {
-		if (table[i]==r) {
-			return (i+3)%54;
-		}
-	}
-	return 0;
-}
-char* cryptage(char* r) {
-char table[54]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
-
-// New Table RushB 
-	table[0] = 'a';
-	table[1] = 'b';
-	table[2] = 'c';
-	table[3] = 'd';
-	table[4] = 'e';
-	table[5] = 'f';    
-	table[6] = 'g';
-	table[7] = 'h';
-	table[8] = 'i';
-	table[9] = 'j';
-	table[10] = 'k';   
-	table[11] = 'l';
-	table[12] = 'm';
-	table[13] = 'n';
-	table[14] = 'o';
-	table[15] = 'p';    
-	table[16] = 'q';
-	table[17] = 'r';
-	table[18] = 's';
-	table[19] = 't';
+*/
 	table[20] = 'u';   
 	table[21] = 'v';
 	table[22] = 'w';
