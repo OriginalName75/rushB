@@ -4,26 +4,10 @@
 
 
 
-/*int main() {
-  printf("\n\n");
-	
-	
-	char* entre = "jesuisunbg";
-	printf("%S",entre);
-	char * crypt = cryptage(entre);
-	printf("%S",crypt);
-	char * decrypt = decryptage(crypt);
-	printf("%S",decrypt);
-
-
-printf("\n\n");
-   return 0;
-}
-*/
 int find(char r, char* table) {
 
 
-
+	
 	int i;
 	for (i=0; i<54;i++) {
 		if (table[i]==r) {
@@ -35,23 +19,23 @@ int find(char r, char* table) {
 char* cryptage(char* r) {
 char table[54]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
 
-// New Table RushB
+// New Table RushB 
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
 	table[3] = 'd';
 	table[4] = 'e';
-	table[5] = 'f';
+	table[5] = 'f';    
 	table[6] = 'g';
 	table[7] = 'h';
 	table[8] = 'i';
 	table[9] = 'j';
-	table[10] = 'k';
+	table[10] = 'k';   
 	table[11] = 'l';
 	table[12] = 'm';
 	table[13] = 'n';
 	table[14] = 'o';
-	table[15] = 'p';
+	table[15] = 'p';    
 	table[16] = 'q';
 	table[17] = 'r';
 	table[18] = 's';
