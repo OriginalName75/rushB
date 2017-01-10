@@ -1,5 +1,7 @@
 # rushB
-Cyka blyat, idi nahui axaxaxaxaxaxaxaxaxa
+
+Cyka blyat, idi nahui!!!
+axaxaxaxaxaxaxaxaxaxa
 
 Product owner :
 Aubertot Quentin
