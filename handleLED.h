@@ -10,4 +10,3 @@
 void readInt(int e);
 void readMorse(int* morse, int size, int led);
 
-write(led, 1, sizeof(int));
