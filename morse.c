@@ -440,7 +440,7 @@ char morseToChar(long m) {
 	char c;
 	switch (r) {
 
-		case Ob1011 :
+		case 0b1011 :
 			c='a';	
 
 		break;
@@ -450,202 +450,202 @@ char morseToChar(long m) {
 
 		break;
 		
-		case 'c' :
-			c='c';rep=conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DOT);	
-
+		case 0b11101110 :
+			c='c';
+			
 		break;
 
-		case 'd' :
-			c='d';rep=conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH);	
-
+		case 0b111011 :
+			c='d';
+			
 		break;
 		
-		case 'e' :
-			c='e';rep=MORSE_DOT;	
+		case 0b10 :
+			c='e';
 
 		break;
 
-		case 'f' :
-			c='f';rep=conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DOT);		
-
+		case 0b10101110 :
+			c='f';
+			
 		break;
 
-		case 'g' :
-			c='g';rep=conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT);		
-
+		case 0b111110 :
+			c='g';
+			
 		break;
 
-		case 'h' :
-			c='h';rep=conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DOT);		
-
+		case 0b10101010 :
+			c='h';
+			
 		break;
 
-		case 'i' :
-			c='i';rep=conca(MORSE_DOT,MORSE_DOT);		
-
+		case 0b1010 :
+			c='i';
+			
 		break;
 
-		case 'j' :
-			c='j';rep=conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DASH);		
-
+		case 0b10111111 :
+			c='j';
+			
 		break;
 
-		case 'k' :
-			c='k';rep=conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH);		
-
+		case 0b111011 :
+			c='k';
+			
 		break;
 
-		case 'l' :
-			c='l';rep=conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DOT);		
-
+		case 0b10111010 :
+			c='l';
+			
 		break;
 
-		case 'm' :
-			c='m';rep=conca(MORSE_DASH,MORSE_DASH);		
-
+		case 0b1111 :
+			c='m';
+			
 		break;	
 
-		case 'n' :
-			c='n';rep=conca(MORSE_DASH,MORSE_DOT);		
-
+		case 0b1110 :
+			c='n';
+			
 		break;	
 
-		case 'o' :
-			c='o';rep=conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH);		
-
+		case 0b111111 :
+			c='o';
+			
 		break;		
 
 
-		case 'p' :
-			c='p';rep=conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DOT);			
-
+		case 0b10111110 :
+			c='p';
+			
 		break;	
 
-		case 'q' :
-			c='q';rep=conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DASH);			
-
+		case 0b11111011 :
+			c='q';
+			
 		break;	
 
-		case 'r' :
-			c='r';rep=conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT);		
-
+		case 0b101110 :
+			c='r';
+			
 		break;	
 
-		case 's' :
-			c='s';rep=conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT);		
-
+		case 0b101010 :
+			c='s';
+			
 		break;	
 
-		case 't' :
-			c='t';rep=MORSE_DASH;		
-
-		break;	
-		
-		case 'u' :
-			c='u';rep=conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH);		
-
+		case 0b11 :
+			c='t';
+			
 		break;	
 		
-		case 'v' :
-			c='v';rep=conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DASH);		
-
-		break;	
-
-		case 'w' :
-			c='w';rep=conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH);		
-
-		break;	
-
-		case 'x' :
-			c='x';rep=conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DASH);	
-
-		break;	
-
-		case 'y' :
-			c='y';rep=conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DASH);			
-
+		case 0b101011 :
+			c='u';
+			
 		break;	
 		
-		case 'z' :
-			c='z';rep=conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DOT);			
-
+		case 0b10101011 :
+			c='v';
+			
 		break;	
 
-		case '0' :
-			c='0';rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH);
+		case 0b101111 :
+			c='w';
+			
+		break;	
 
+		case 0b11101011 :
+			c='x';
+			
+		break;	
+
+		case 0b11101111 :
+			c='y';
+			
+		break;	
+		
+		case 0b11111010 :
+			c='z';
+			
+		break;	
+
+		case 0b1111111111 :
+			c='0';
+			
 		break;
 		
-		case '1' :
-			c='1';rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH);			
-
+		case 0b1011111111 :
+			c='1';
+			
 		break;
 			
 		
-		case '2' :
-			c='2';rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DASH),MORSE_DASH);		
-
+		case 0b1010111111 :
+			c='2';
+			
 		break;	
 
-		case '3' :
-			c='3';rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DASH);		
-
+		case 0b1010101111 :
+			c='3';
+			
 		break;	
 
-		case '4' :
-			c='4';rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DASH);	
-
+		case 0b1010101011 :
+			c='4';
+			
 		break;	
 
-		case '5' :
-			c='5';rep=conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DOT);			
-
+		case 0b1010101010 :
+			c='5';
+			
 		break;	
 		
-		case '6' :
-			c='6';rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DOT),MORSE_DOT),MORSE_DOT);			
-
+		case 0b1110101010 :
+			c='6';
+			
 		break;	
 
-		case '7' :
-			c='7';rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DOT);
-
+		case 0b1111101010 :
+			c='7';
+			
 		break;
 		
-		case '8' :
-			c='8';rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DOT);			
-
+		case 0b1111111010 :
+			c='8';
+			
 		break;	
 			
-		case '9' :
-			c='9';rep=conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DOT);		
-
+		case 0b1111111110 :
+			c='9';
+			
 		break;
 		
-		case '.' :
-			c='.';rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DASH);			
-
+		case 0b101110111011 :
+			c='.';
+			
 		break;
 			
 		
-		case ',' :
-			c=',';rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DASH),MORSE_DOT),MORSE_DOT),MORSE_DASH),MORSE_DASH);		
-
+		case 0b111110101111 :
+			c=',';
+			
 		break;	
 
-		case '?' :
-			c='?';rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DOT),MORSE_DASH),MORSE_DASH),MORSE_DOT),MORSE_DOT);			
-
+		case 0b101011111010 :
+			c='?';
+			
 		break;	
 
-		case '\'' :
-			c='\'';rep=conca(conca(conca(conca(conca(MORSE_DOT,MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DASH),MORSE_DOT);		
-
+		case 0b101111111110 :
+			c='\'';
+			
 		break;	
 
-		case '!' :
-			c='!';rep=conca(conca(conca(conca(conca(MORSE_DASH,MORSE_DOT),MORSE_DASH),MORSE_DOT),MORSE_DASH),MORSE_DASH);			
-
+		case 0b111011101111 :
+			c='!';
+			
 		break;	
 		
 		case 0b1110101110 :
