@@ -7,6 +7,7 @@
 const char* byte_to_binary();
 long stringToMorse(char* r);
 int* binaryToMorse(long l, int* size);
+char* binaryToMorseChar(long l, int* size);
 long charToMorse(char r);
 
 long conca(long a, long b);

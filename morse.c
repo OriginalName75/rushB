@@ -55,6 +55,27 @@ const char* byte_to_binary(int x)
 
     return b;
 }
+char* binaryToMorseChar(long l, int* size) {
+
+	int* i =binaryToMorse(l, size);
+	int j;
+	long memory=0;
+	for (j=0;j<*size;j++) {
+		if (i==MORSE_SPACE) {
+			memory=0;
+		}else {
+			if (memory==0) {
+				memory=*i;
+			}else {
+				memory=conca(memory,*i);
+			}
+			
+		}
+		i++;
+	}
+	return rep;
+
+}
 int* binaryToMorse(long l, int* size) {
 	
 	

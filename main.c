@@ -19,6 +19,7 @@ int main() {
 	printf("%s\n",sortie2);
 	long aaa = stringToMorse(sortie2);
 	printf("%lo\n",aaa);
+	
 	int* size=(int*) malloc(sizeof(int));
 	int* rep = binaryToMorse(aaa, size);
 	
