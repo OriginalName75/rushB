@@ -20,7 +20,7 @@ printf("\n\n");
    return 0;
 }
 */
-	int find(char r, char* table) {
+int find(char r, char* table) {
 
 
 
