@@ -19,7 +19,7 @@ OBJECTIVE:
   
   
  
-Simple example of cryptography and morse
+# Simple example of cryptography and morse
 
 char* entre = "t*est";
 char sortie[42];
