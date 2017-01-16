@@ -85,7 +85,7 @@ char table[54];
 	}
 	return rep;
 }
-
+// Permet de retrouver le caractère du message initial (décryptage)
 int defind(char r, char* table) {
 
 
@@ -100,9 +100,8 @@ int defind(char r, char* table) {
 }
 
 char* decryptage(char* r) {
-char table[54]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
-
-// New Table RushB 
+char table[54]; 
+	 
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
