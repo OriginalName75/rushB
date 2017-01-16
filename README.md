@@ -17,3 +17,26 @@ OBJECTIF :
 OBJECTIVE:
   The goal of this project is to send a message from a computer to an APF28 Armadeus card. In order to protect our message, we use the Cesar Cipher. (+3) The message is a text transformed into Morse.
   
+  
+ 
+Simple example of cryptography and morse
+
+char* entre = "t*est";
+char sortie[42];
+
+transString(entre,sortie); // remove unusual characteres
+>> "test"
+char* sortie2=cryptage(sortie); // use cesar
+>> "whvw"
+
+long aaa = stringToMorse(sortie2); // convert to morse
+>> 13652452657
+
+int* size=(int*) malloc(sizeof(int));
+long* rep = binaryToMorse(aaa, size);
+
+char* rep2 = binaryToMorseChar(rep, *size); // morse to string
+>> "whvw"
+
+char* rep22 = decryptage(rep2); // decrypt with cesar
+>> "test"
