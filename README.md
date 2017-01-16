@@ -1,14 +1,16 @@
 # rushB
-Turlu du turfu
+
+Cyka blyat, idi nahui!!!
+axaxaxaxaxaxaxaxaxaxa
 
 Product owner :
-AU----t Qu---IN\n
+Aubertot Quentin
 
 Scrum master :
-Ni---S Soleil
+Sun Tithnara
 
 Techniciens :
-A--Die M---N |
-J--es |
-Tony
+Babidi 'Jhen' Moran |
+Zhu Lei |
+Welte Anthony
 
