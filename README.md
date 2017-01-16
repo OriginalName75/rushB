@@ -41,5 +41,5 @@ long* rep = binaryToMorse(aaa, size);
 char* rep2 = binaryToMorseChar(rep, *size); // morse to string
 >> "whvw"
 
-char* rep22 = decryptage(rep2); // decrypt with cesar
+char* rep22 = decryptage(rep2); // decipher with cesar
 >> "test"
