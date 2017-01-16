@@ -1,35 +1,35 @@
 #include <handleLED.h>
 
-/*Gere le clignotement de la led en morse selon l'entier en input
-0 est un espace en morse
-2 est un point en morse
-3 est un trait en morse*/
+/*Manage the LED lighting according to the integer input
+0 is space
+2 is dot
+3 is dash*/
 void readInt(int e, int led){
   switch(e) {
   
     case 2 :
       write(led, 1, sizeof(int));
-      sleep(TIME_DOT);//s'allume pendant le temps d'un point
+      sleep(TIME_DOT);//turn on the LED for the time associated with DOT
       write(led, 0, sizeof(int));
-      sleep(TIME_DOT);//s'eteint pendant le temps d'un point
+      sleep(TIME_DOT);//turn off the LED for the time associated with DOT
     break;
   
     case 3 :
       write(led, 1, sizeof(int));
-      sleep(TIME_DASH);//s'allume pendant le temps d'un trait
+      sleep(TIME_DASH);//turn on the LED for the time associated with DASH
       write(led, 0, sizeof(int));
-      sleep(TIME_DOT);//s'eteint pendant le temps d'un point
+      sleep(TIME_DOT);//turn off the LED for the time associated with DOT
     break;  
   
     default :
       write(led, 0, sizeof(int));
-      sleep(TIME_SPACE);//reste eteint le temps d'un espace
+      sleep(TIME_SPACE);//turn off the LED for the time associated with SPACE
   
     }
 
 }
 
-/*Gere le clignotement de la led en morse pour un tableau d'entier morse en input*/
+/*Manage the LED lighting according to the integer array input*/
 void readMorse(int* morse, int size, int led){
   int i;
   for (i=0; i < size; i++){
