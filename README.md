@@ -21,7 +21,7 @@ OBJECTIVE:
 
 
 
-Simple example of cryptography and morse
+# Simple example of cryptography and morse
 
 char* entre = "t*est";
 char sortie[42];
@@ -33,7 +33,7 @@ char* sortie2=cryptage(sortie); // use cesar
 >> "whvw"
 
 long aaa = stringToMorse(sortie2); // convert to morse
->> 13652452657
+>> 13652452657 // 0b1100101101101111111110010100110001
 
 int* size=(int*) malloc(sizeof(int));
 long* rep = binaryToMorse(aaa, size);
@@ -41,5 +41,5 @@ long* rep = binaryToMorse(aaa, size);
 char* rep2 = binaryToMorseChar(rep, *size); // morse to string
 >> "whvw"
 
-char* rep22 = decryptage(rep2); // decrypt with cesar
+char* rep22 = decryptage(rep2); // decipher with cesar
 >> "test"
