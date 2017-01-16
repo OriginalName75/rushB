@@ -2,30 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*convertit char c en un caractere out conforme a l'alphabet simplifie. 
-Renvoie 2 si le caractere c est special, 1 si c'est une majuscule et 0 s'il est déja conforme. */
+/*converting char c to char out in a simplified alphabet. 
+Return 2 if c is special, 1 if c is a capital letter et 0 if c is in the simplified alphabet. */
 int transChar(char c, char* out){
 	if (c < 33 || c == 35 || c == 37 || c == 42 || c == 60 || c == 62 || c == 91 || c == 92|| c == 93 || c == 94|| c == 96 || c > 122)
 	{
 		return 2;
-		//Caractere non traite dans notre reduction du langage
+		//Char c is not in the simplified alphabet
 	}
 	else if( c>64 && c<91)
 	{
 		*out = c+32;
 		return 1;
-		//Caractere majuscule converti en minuscule
+		//Char c is a capital letter
 	}
 	else
 	{
 		*out =c;
 		return 0;
-		//Caractere minuscule ou special inclus dans notre reduction du langage
+		//Char c is in the simplified alphabet
 	}
 }
 
-/*convertit le string s en un string out conforme a l'alphabet simplifie.
-Renvoie 1 si le texte out est different de s, 0 sinon.
+/*converting the string s to string out in the simplified alphabet.
+Return 1 if s != out, or else 0.
 
 Exemple:
 char* s = "Je suis un ananas!******";
@@ -54,11 +54,11 @@ int transString(char* s, char* out){
 			if(erreur != 2){
 				out[j] = c;
 				j = j+1;			
-			} //Erreur prend la valeur du retour de transChar precise precedemment.
+			} //Erreur take the value described in transChar.
 		
 			if(erreur !=0 && errone == 0){
 				errone = 1;
-			}; //Si le texte est modifie, errone passe a 1.
+			};
 	}
 	
 	out[j] = '\0';
