@@ -76,7 +76,7 @@ char table[54];
 	table[53] = '@';
 	char * rep = malloc(strlen(r));
 
-	// Renvoi le caractère codé pour chaque caractère du message
+	// Renvoie le caractère codé pour chaque caractère du message
 	int i;
 	for (i = 0; i < strlen(r); i++){
 		rep[i]=table[find(r[i],table)];
