@@ -101,7 +101,8 @@ int defind(char r, char* table) {
 
 char* decryptage(char* r) {
 char table[54]; 
-	 
+	
+// Notre table de cryptage avec 54 caractères.	 
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
