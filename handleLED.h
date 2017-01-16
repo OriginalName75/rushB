@@ -6,12 +6,12 @@
 #define TIME_SPACE 500
 
 
-/*Gere le clignotement de la led en morse selon l'entier en input
-0 est un espace en morse
-2 est un point en morse
-3 est un trait en morse*/
+/*Manage the LED lighting according to the integer input
+0 is space
+2 is dot
+3 is dash*/
 void readInt(int e, int led);
 
-/*Gere le clignotement de la led en morse pour un tableau d'entier morse en input*/
+/*Manage the LED lighting according to the integer array input*/
 void readMorse(int* morse, int size, int led);
 
