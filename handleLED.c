@@ -1,4 +1,4 @@
-#include <handleLED.h>
+#include "handleLED.h"
 
 /*Manage the LED lighting according to the integer input
 0 is space
@@ -33,7 +33,7 @@ void readInt(int e, int led){
 void readMorse(int* morse, int size, int led){
   int i;
   for (i=0; i < size; i++){
-    readInt(morse[i]);
+    readInt(morse[i], led);
   
   }
 
