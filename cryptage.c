@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 
-/*Fonction permettant de coder le code à partir d'une table de 54 caractères.
-On cherche le caractère actuel dans la table et l'on renvoi le caractère 3 cases après. 
+/*Use the Cesar cipher on the char c, 
+return c+3
 */
 
 int find(char r, char* table) {
@@ -19,7 +19,7 @@ int find(char r, char* table) {
 char* cryptage(char* r) {
 char table[54]; 
 	
-// Notre table de cryptage avec 54 caractères.
+// Our cipher table of 54 characters
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
@@ -76,7 +76,7 @@ char table[54];
 	table[53] = '@';
 	char * rep = malloc(strlen(r));
 
-	// Parcours du message reçu
+	// Use the cipher on our string
 	int i;
 	for (i = 0; i < strlen(r); i++){
 		rep[i]=table[find(r[i],table)];
@@ -85,7 +85,7 @@ char table[54];
 	}
 	return rep;
 }
-// Permet de retrouver le caractère du message initial (décryptage)
+//Decipher using the same method (-3)
 int defind(char r, char* table) {
 
 
@@ -101,8 +101,8 @@ int defind(char r, char* table) {
 
 char* decryptage(char* r) {
 char table[54]; 
-	
-// Notre table de cryptage avec 54 caractères.	 
+
+// Our cipher table of 54 characters 
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
@@ -159,7 +159,7 @@ char table[54];
 	table[53] = '@';
 	char * rep = malloc(strlen(r));
 
-	// Parcours le message codé
+	// Decipher the whole string
 	int i;
 	for (i = 0; i < strlen(r); i++){
 		rep[i]=table[defind(r[i],table)];
