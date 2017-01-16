@@ -33,7 +33,7 @@ char* sortie2=cryptage(sortie); // use cesar
 >> "whvw"
 
 long aaa = stringToMorse(sortie2); // convert to morse
->> 13652452657
+>> 13652452657 // 1100101101101111111110010100110001
 
 int* size=(int*) malloc(sizeof(int));
 long* rep = binaryToMorse(aaa, size);
