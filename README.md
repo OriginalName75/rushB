@@ -6,7 +6,7 @@ Aubertot Quentin
 Scrum master :
 Sun Tithnara
 
-Techniciens :
+Technicians :
 Babidi 'Jhen' Moran |
 Zhu Lei |
 Welte Anthony
