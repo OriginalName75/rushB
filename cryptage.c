@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 
+/*Fonction permettant de coder le code à partir d'une table de 54 caractères.
+On cherche le caractère actuel dans la table et l'on renvoi le caractère 3 cases après. 
+*/
 
 int find(char r, char* table) {
-
-
-	
 	int i;
 	for (i=0; i<54;i++) {
 		if (table[i]==r) {
@@ -17,9 +17,9 @@ int find(char r, char* table) {
 	return 0;
 }
 char* cryptage(char* r) {
-char table[54]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
-
-// New Table RushB 
+char table[54]; 
+	
+// Notre table de cryptage avec 54 caractères.
 	table[0] = 'a';
 	table[1] = 'b';
 	table[2] = 'c';
@@ -76,7 +76,7 @@ char table[54]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
 	table[53] = '@';
 	char * rep = malloc(strlen(r));
 
-	
+	// Renvoi le caractère codé pour chaque caractère du message
 	int i;
 	for (i = 0; i < strlen(r); i++){
 		rep[i]=table[find(r[i],table)];

@@ -17,6 +17,13 @@ char*  input_string[100];
 	    printf("%s",input_string);
     }
 
+
+	char* entre = "jesuisunbg"; // Message à coder
+	char * crypt = cryptage(entre); // On crypte le message d'entrée
+	printf("%S",crypt); 
+	
+	printf("%s\n", byte_to_binary(stringToMorse(crypt))); 
+
 	/*
 	char* entre = "jesuis";
 	
