@@ -13,8 +13,8 @@
 #include "cryptage.h"
 
 #define DEST_IP "127.0.0.1" 
-#define DEST_PORT 50303
-#define NMAX 100
+#define DEST_PORT 50000
+#define NMAX 6
 
 int main(int argc,char * argv[])
 {
@@ -40,23 +40,23 @@ int main(int argc,char * argv[])
 		exit(1);
 	}
 	char msg[NMAX];
-	char *cry;
 	
 	while (strncmp(msg,"quit",4))
 	{
 		printf("Input message:");
 		fgets (msg, NMAX, stdin);
 
-		cry = cryptage(msg);
-
+		
+		char* cry = cryptage(msg);
+		msg[strlen(msg)-1] = '\0';
 		printf("%s\n", cry);
 
-
-		if(-1 == write(socket_RV,msg,NMAX))  
+		if(-1 == write(socket_RV,cry,strlen(msg)))
 		{
 			printf("Write fail!\r\n");  
 			return -1; 
-		}    
+		} 
+
 	}
 
 	close(socket_RV);

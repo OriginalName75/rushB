@@ -8,8 +8,15 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <signal.h>
-#define MYPORT 50303
-#define NMAX 100
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+
+#include "cryptage.h"
+
+#define MYPORT 50000
+#define NMAX 6
 
 int main()
 {
@@ -53,15 +60,40 @@ int main()
 	msg=malloc(sizeof(char)*NMAX);
 	char *buffer;
 	buffer=malloc(sizeof(char)*NMAX);
-	for(;1;)
+
+	// Pipe
+	char * pipe = "svr2led";
+	if(mkfifo(pipe, 0644) != 0)
+	{
+		perror("mkfifo");
+		return EXIT_FAILURE;
+	}
+	// Open file desciptor
+	int pipe_fd = open(pipe, O_WRONLY | O_CREAT);
+	printf("Pipe opened.\n");
+
+	while (strncmp(buffer,"txlw",4))
 	{
 		if(-1 == read(socket_service,buffer,NMAX))  
 		{  
 			printf("Read fail !\r\n");  
 			return -1;  
-		}  
-		printf("%s",buffer);
+		}
+
+		write(pipe_fd, buffer, strlen(buffer));
+		
+
+		//buffer[strlen(buffer)-1] = '\0';		
+
+		printf("%s\n",decryptage(buffer));
+		fflush(stdout);
 	}
+
+
+	// Close output pipe
+	close(pipe_fd);
+	unlink(pipe);
+
 	close(socket_service);
 	close(socket_RV);  
 	return 0; 

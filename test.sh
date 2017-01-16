@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xterm -e ./s &
+xterm -e ./server &
 sleep 1
 xterm -e ./sender &
 sleep 1

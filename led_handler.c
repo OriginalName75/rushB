@@ -10,6 +10,10 @@
 
 int main(int argc, char *argv[])
 {
+
+	
+
+	
 	char buffer[NMAX];
 	char * pipe = "svr2led";
 
