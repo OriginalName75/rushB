@@ -10,6 +10,8 @@
 
 int main(int argc, char *argv[])
 {
+	int led = open("/sys/class/gpio/gpio21/value", O_WRONLY);
+	
 	char buffer[NMAX];
 	char * pipe = "svr2led";
 
@@ -26,6 +28,10 @@ int main(int argc, char *argv[])
 		// Print buffer
 		printf("%s\n", buffer);
 
+		int morse;
+		
+		readMorse(&morse, 1, led);
+		
 		// Clear buffer
 		for(int i=0; i<NMAX; ++i)
 			buffer[i] = '\0';
