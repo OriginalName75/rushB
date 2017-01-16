@@ -26,6 +26,7 @@ char sortie[42];
 
 transString(entre,sortie); // remove unusual characteres
 >> "test"
+
 char* sortie2=cryptage(sortie); // use cesar
 >> "whvw"
 
