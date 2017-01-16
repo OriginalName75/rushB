@@ -8,21 +8,35 @@ int transChar(char c, char* out){
 	if (c < 33 || c == 35 || c == 37 || c == 42 || c == 60 || c == 62 || c == 91 || c == 92|| c == 93 || c == 94|| c == 96 || c > 122)
 	{
 		return 2;
+		//Caractere non traite dans notre reduction du langage
 	}
 	else if( c>64 && c<91)
 	{
 		*out = c+32;
 		return 1;
+		//Caractere majuscule converti en minuscule
 	}
 	else
 	{
 		*out =c;
-		return 0;	
+		return 0;
+		//Caractere minuscule ou special inclus dans notre reduction du langage
 	}
 }
 
 /*convertit le string s en un string out conforme a l'alphabet simplifie.
-Renvoie 1 si le texte out est different de s, 0 sinon.*/
+Renvoie 1 si le texte out est different de s, 0 sinon.
+
+Exemple:
+char* s = "Je suis un ananas!******";
+char* out;
+int b = transString(s,out);
+
+>>> s = "Je suis un ananas!******";
+	out = "jesuisunananas!"
+	b = 1; (car s != out)
+
+*/
 int transString(char* s, char* out){
 	
 	int erreur;
@@ -40,60 +54,16 @@ int transString(char* s, char* out){
 			if(erreur != 2){
 				out[j] = c;
 				j = j+1;			
-			}
+			} //Erreur prend la valeur du retour de transChar precise precedemment.
+		
 			if(erreur !=0 && errone == 0){
 				errone = 1;
-			};
+			}; //Si le texte est modifie, errone passe a 1.
 	}
 	
 	out[j] = '\0';
 	
 	return errone;
 }
-
-/*int main()
-{
-	
-	FILE* entree = fopen("entree.txt", "r+");
-	int erreur;
-	int errone;
-	char c;
-	char caractere;
-    if (entree != NULL)
-    {
-        // On peut lire et écrire dans le fichier
-		FILE* clair = fopen("clair.txt", "w");
-		do
-        {
-            caractere = fgetc(entree);
-			erreur = transChar(caractere,&c);
-			if(erreur != 2){
-				fputc(c,clair);
-			}
-			if(erreur !=0 && errone == 0){
-				errone = 1;
-			}            
-			//printf("%c", caractere);
-        } while (caractere != EOF); // On continue tant que fgetc n'a pas retourné EOF (fin de fichier)
-		
-		
-		fclose(clair);
-    }
-    else
-    {
-        printf("Impossible d'ouvrir le fichier entree.txt");
-    }	
-	fclose(entree);
-
-	char sortie[128];
-
-	transString("Je suis un Ananas!***",sortie);
-	printf(sortie);
-
-
-	return 0;
-
-}*/
-
 
 
