@@ -1,7 +1,15 @@
-/*convertit char c en un caractere out conforme a l'alphabet simplifie.
-Renvoie 2 si le caractere c est special, 1 si c'est une majuscule et 0 s'il est déja conforme. */
+/*converting char c to char out in a simplified alphabet. 
+Return 2 if c is special, 1 if c is a capital letter et 0 if c is in the simplified alphabet. */
 int transChar(char c, char* out);
 
-/*convertit le string s en un string out conforme a l'alphabet simplifie.
-Renvoie 1 si le texte out est different de s, 0 sinon.*/
+/*converting the string s to string out in the simplified alphabet.
+Return 1 if s != out, or else 0.
+Exemple:
+char* s = "Je suis un ananas!******";
+char* out;
+int b = transString(s,out);
+>>> s = "Je suis un ananas!******";
+	out = "jesuisunananas!"
+	b = 1; (car s != out)
+*/
 int transString(char* s, char* out);
