@@ -1,9 +1,9 @@
 #pragma once
 #include <unistd.h>
 #include <time.h>
-#define TIME_DOT 100
-#define TIME_DASH 1000
-#define TIME_SPACE 500
+#define TIME_DOT 100000
+#define TIME_DASH 1000000
+#define TIME_SPACE 500000
 
 
 /*Manage the LED lighting according to the integer input
