@@ -17,8 +17,18 @@ OBJECTIF :
 OBJECTIVE:
   The goal of this project is to send a message from a computer to an APF28 Armadeus card. In order to protect our message, we use the Cesar Cipher. (+3) The message is a text transformed into Morse. First the message is simplified, then it is ciphered, then it is turned into Morse. On the card, the LED can show the Morse code. The message can also be deciphered.
 
+# Installation
+* Compile the three programs
+* Put server.out and led.out in the home directory on the board
+* Put startup.sh in the /etc/init.d directory and make sure it is executable
+* Reboot the board
+* Once the board has rebooted the programs should have launched automatically
+* launch client.out on our local machine and specify the board ip address in argument
+* Type
 
-
+# Local test
+The script test_local.sh can be used to test the system on a single machine. It requires xterm to be installed.
+Three terminals are launched, you can interact with the client and watch the result in the other terminals.
 
 
 # Simple example of cryptography and morse

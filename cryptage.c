@@ -3,9 +3,8 @@
 #include <stdlib.h>
 
 
-/*Use the Cesar cipher on the char c, 
-return c+3
-*/
+// Use the Cesar cipher on the char c, 
+// return c+3
 
 int find(char r, char* table) {
 	int i;
@@ -16,6 +15,8 @@ int find(char r, char* table) {
 	}
 	return 0;
 }
+
+// Cypher the string r
 char* cryptage(char* r) {
 char table[54]; 
 	
@@ -85,6 +86,7 @@ char table[54];
 	}
 	return rep;
 }
+
 //Decipher using the same method (-3)
 int defind(char r, char* table) {
 
@@ -99,6 +101,7 @@ int defind(char r, char* table) {
 	return 0;
 }
 
+//Decypher the string r
 char* decryptage(char* r) {
 char table[54]; 
 
